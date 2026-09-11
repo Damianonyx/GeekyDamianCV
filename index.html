@@ -1,454 +1,848 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Abayomi Ekundayo | Damianonyx Portfolio</title>
+  <title>Damianonyx — AI / Web3 / Emerging Technology</title>
 
-  <meta 
-    name="description" 
-    content="Abayomi Ekundayo, also known as Damianonyx, is a Web3 technical writer, content strategist, researcher, storyteller, ghostwriter, and Economics and Education student."
+  <meta
+    name="description"
+    content="Damianonyx — writing, research and experiments around AI, Web3, emerging systems and technology."
   />
 
-  <meta name="keywords" content="Web3 writer, technical writer, content strategist, ghostwriter, crypto writer, blockchain researcher, Damianonyx, Abayomi Ekundayo" />
+  <meta name="theme-color" content="#050505" />
 
-  <!-- FAVICON / SMALL WEBSITE ICON -->
-<link rel="icon" type="image/png" href="favicon.png" />
-<link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- WHATSAPP / TELEGRAM / SOCIAL PREVIEW -->
-<meta property="og:title" content="Abayomi Ekundayo | Damianonyx Portfolio" />
-<meta property="og:description" content="Web3 technical writer, content strategist, researcher, storyteller, ghostwriter, and Economics and Education student." />
-<meta property="og:image" content="https://geeky-damian-cv.vercel.app/preview-v2.png" />
-<meta property="og:image:secure_url" content="https://geeky-damian-cv.vercel.app/preview-v2.png" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://geeky-damian-cv.vercel.app/" />
-<meta property="og:type" content="website" />
-
-<!-- X / TWITTER PREVIEW -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:url" content="https://geeky-damian-cv.vercel.app/" />
-<meta name="twitter:title" content="Abayomi Ekundayo | Damianonyx Portfolio" />
-<meta name="twitter:description" content="Web3 technical writer, content strategist, researcher, storyteller, ghostwriter, and Economics and Education student." />
-<meta name="twitter:image" content="https://geeky-damian-cv.vercel.app/preview-v2.png" />
-
-  <link rel="stylesheet" href="style.css" />
-</head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Abayomi Ekundayo | Damianonyx Portfolio</title>
-
-  <meta 
-    name="description" 
-    content="Abayomi Ekundayo, also known as Damianonyx, is a Web3 technical writer, content strategist, researcher, storyteller, ghostwriter, and Economics and Education student."
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
   />
 
-  <meta name="keywords" content="Web3 writer, technical writer, content strategist, ghostwriter, crypto writer, blockchain researcher, Damianonyx, Abayomi Ekundayo" />
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <!-- ================= NAVIGATION ================= -->
-  <header class="site-header">
-    <nav class="nav-container">
-      <a href="#" class="logo">DAMIANONYX</a>
+  <!-- BACKGROUND SYSTEM -->
+  <canvas id="systemCanvas"></canvas>
 
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">
-        <span></span>
-        <span></span>
-      </button>
+  <div class="noise"></div>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#portfolio">POW</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- HEADER -->
+  <header class="header">
+
+    <a href="#top" class="logo">
+      DAMIANONYX
+    </a>
+
+    <div class="header-center">
+      AI / WEB3 / EMERGING SYSTEMS
+    </div>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      aria-label="Open menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
   </header>
 
 
-  <main>
+  <!-- MENU -->
+  <nav class="menu" id="menu">
 
-    <!-- ================= HERO SECTION ================= -->
-    <section class="hero section" id="home">
-      <div class="hero-container">
+    <a href="#about">
+      <span>01</span>
+      ABOUT
+    </a>
 
-        <div class="hero-content">
-          <p class="eyebrow">ALIAS: DAMIANONYX</p>
+    <a href="#focus">
+      <span>02</span>
+      FOCUS
+    </a>
 
-          <!-- EDIT YOUR NAME HERE -->
-          <h1>ABAYOMI<br />EKUNDAYO</h1>
+    <a href="#proof">
+      <span>03</span>
+      PROOF
+    </a>
 
-          <p class="location">
-            <span class="location-pin"></span>
-            Lagos, Nigeria
-          </p>
+    <a href="#work">
+      <span>04</span>
+      WORK
+    </a>
 
-          <!-- EDIT YOUR ROLE TAGS HERE -->
-          <div class="role-tags">
-            <span>Technical Writer</span>
-            <span>Freelance Copywriter</span>
-            <span>Ghost Writer</span>
-            <span>Content Strategist</span>
-          </div>
+    <a href="#builds">
+      <span>05</span>
+      BUILDS
+    </a>
 
-          <div class="hero-buttons">
-            <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
-            <a href="#contact" class="btn btn-secondary">Contact Me</a>
-          </div>
+    <a href="#currently">
+      <span>06</span>
+      CURRENTLY
+    </a>
+
+    <a href="#contact">
+      <span>07</span>
+      CONNECT
+    </a>
+
+  </nav>
+
+
+  <main id="top">
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-meta">
+        <span>SYS.001</span>
+        <span>PERSONAL INTERFACE</span>
+      </div>
+
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          WRITER / RESEARCHER / BUILDER
         </div>
 
-        <aside class="hero-card" aria-label="Profile and contact details">
+        <h1>
+          DAMIANONYX<span class="cursor">_</span>
+        </h1>
 
-          <!-- EDIT YOUR PROFILE IMAGE HERE -->
-          <div class="profile-image-wrap">
-            <img 
-              src="https://i.ibb.co/svmh4gz3/file-0000000073b471f4b7f6c26f287c3565.png" 
-              alt="Damianonyx profile image" 
-              class="profile-image"
-            />
-          </div>
+        <p class="hero-description">
+          I write, research about AI, Web3, technology,
+          emerging systems, and build things while figuring
+          out how they work.
+        </p>
 
-          <div class="contact-preview">
-            <div>
-              <p class="mini-heading">Contact</p>
-              <a href="mailto:Abayomiekundayo9568@gmail.com">Abayomiekundayo9568@gmail.com</a>
-              <a href="mailto:Damianonyx83@gmail.com">Damianonyx83@gmail.com</a>
-            </div>
+        <div class="hero-links">
 
-            <div>
-              <p class="mini-heading">Profiles</p>
-              <a href="https://x.com/GeekyDamian" target="_blank" rel="noopener noreferrer">𝕏 @GeekyDamian</a>
-              <a href="https://medium.com/@damianonyx" target="_blank" rel="noopener noreferrer">Medium @damianonyx</a>
-              <a href="https://open.substack.com/pub/geekydamian?utm_source=share&utm_medium=android&r=3ym1m9" target="_blank" rel="noopener noreferrer">Substack: GeekyDamian</a>
-              <a href="https://www.linkedin.com/in/ekundayo-abayomi-9a54a93b7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-          </div>
+          <a href="#work">
+            ENTER
+            <span>↘</span>
+          </a>
 
-        </aside>
+          <a href="#contact">
+            CONNECT
+            <span>↗</span>
+          </a>
+
+        </div>
 
       </div>
+
+
+      <div class="hero-footer">
+
+        <span>
+          SCROLL TO EXPLORE
+        </span>
+
+        <span>
+          2026
+        </span>
+
+      </div>
+
     </section>
 
 
-    <!-- ================= ABOUT SECTION ================= -->
+
+    <!-- ABOUT -->
     <section class="section" id="about">
-      <div class="container two-column">
-        <div>
-          <p class="section-label">About Me</p>
-          <h2>Writing, research, storytelling, and Web3 clarity.</h2>
-        </div>
 
-        <div class="about-text">
-          <!-- EDIT YOUR BIO HERE -->
+      <div class="section-label">
+        01 / ABOUT
+      </div>
+
+
+      <div class="section-body">
+
+        <p class="large-text">
+          My work sits around AI, Web3, technical writing,
+          research, storytelling and the occasional experiment
+          that probably started with
+          <em>“I wonder if I can build this.”</em>
+        </p>
+
+
+        <div class="about-grid">
+
           <p>
-            I am a Web3 Technical Writer and Content Strategist and also a storyteller focused on helping crypto, Web3 and Web2 projects explain their products clearly through educational content, storytelling, and community-driven narratives.
+            I like taking complicated systems, finding the
+            interesting part, and turning it into something
+            people can actually understand.
           </p>
 
           <p>
-            I create research-based tweets, articles, research blogs, project breakdowns, campaign content, and ghostwritten pieces that simplify complex Web3 ideas for wider audiences.
+            I write, research and experiment across emerging
+            technology while continuously learning how the
+            underlying systems actually work.
           </p>
 
-          <p>
-            My background in Economics and Education strengthens my ability to explain technical concepts in a simple, structured, and relatable way.
-          </p>
         </div>
+
       </div>
+
     </section>
 
 
-    <!-- ================= SKILLS SECTION ================= -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Skills</p>
-          <h2>Main things I bring to the table.</h2>
-        </div>
 
-        <!-- EDIT YOUR SKILLS HERE -->
-        <div class="skills-grid">
-          <article class="skill-card">Technical Writing</article>
-          <article class="skill-card">Ghostwriting</article>
-          <article class="skill-card">Blog Writing</article>
-          <article class="skill-card">Crypto Content Writing</article>
-          <article class="skill-card">Storytelling</article>
-          <article class="skill-card">Content Strategy</article>
-          <article class="skill-card">Project Analysis</article>
-          <article class="skill-card">Basic Website / Blog Creation</article>
-          <article class="skill-card">Prompt Engineering</article>
-          <article class="skill-card">Graphics Design — Upskilling</article>
-        </div>
+    <!-- FOCUS -->
+    <section class="section" id="focus">
+
+      <div class="section-label">
+        02 / FOCUS
       </div>
-    </section>
 
 
-    <!-- ================= EXPERIENCE SECTION ================= -->
-    <section class="section" id="experience">
-      <div class="container">
+      <div class="section-body">
+
         <div class="section-heading">
-          <p class="section-label">Experience</p>
-          <h2>Web3 writing, research, strategy, and community work.</h2>
-        </div>
 
-        <div class="experience-grid">
+          <h2>
+            What I'm<br>
+            <em>working around.</em>
+          </h2>
 
-          <article class="experience-card large-card">
-            <span class="card-number">01</span>
-            <h3>Web3 Technical Writer</h3>
-            <p>
-              I have been in Web3 for over 2 years, with core knowledge of blockchain technology, DeFi, and common crypto concepts. I create educational and research-based content for crypto, DeFi, and blockchain projects.
-            </p>
-          </article>
-
-          <article class="experience-card">
-            <span class="card-number">02</span>
-            <h3>Ghostwriter & Content Strategist</h3>
-            <p>
-              I help founders, projects, and creators communicate ideas clearly through research-based tweets, articles, campaign content, product explainers, and community-focused narratives.
-            </p>
-          </article>
-
-          <article class="experience-card">
-            <span class="card-number">03</span>
-            <h3>Community-Focused Writer</h3>
-            <p>
-              I simplify complex Web3 concepts so investors, users, and beginners can understand what a project is building, why it matters, and how the ecosystem works.
-            </p>
-          </article>
+          <span>
+            MOVE / EXPLORE
+          </span>
 
         </div>
 
-        <div class="key-areas">
-          <h3>Key Areas</h3>
 
-          <ul>
-            <li>➙ Web3 research and project analysis</li>
-            <li>➙ Educational tweets and article writing</li>
-            <li>➙ Technical explainers and product breakdowns</li>
-            <li>➙ Ghostwriting and campaign content</li>
-            <li>➙ Storytelling for crypto communities</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+        <div class="focus-grid">
 
-
-    <!-- ================= PORTFOLIO / PROOF OF WORK SECTION ================= -->
-    <section class="section" id="portfolio">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Proof of Work</p>
-          <h2>Selected writing, research, articles, and storytelling pieces.</h2>
-        </div>
-
-        <div class="featured-project">
-          <div>
-            <p class="project-type">Featured Research Blog</p>
-            <h3>REAL FINANCE Decoded</h3>
-            <p>
-              A research-based blog website breaking down Real Finance, RWA infrastructure, asset tokenization, trust layers, and the future of blockchain infrastructure.
-            </p>
+          <div class="focus-item">
+            <small>01</small>
+            <strong>Artificial Intelligence</strong>
+            <p>models · agents · infrastructure</p>
           </div>
 
-          <a href="https://realfinancedecoded.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Visit Website
-          </a>
+          <div class="focus-item">
+            <small>02</small>
+            <strong>AI Systems</strong>
+            <p>understanding how the machinery works</p>
+          </div>
+
+          <div class="focus-item">
+            <small>03</small>
+            <strong>Web3</strong>
+            <p>protocols · ecosystems · infrastructure</p>
+          </div>
+
+          <div class="focus-item">
+            <small>04</small>
+            <strong>Real-World Assets</strong>
+            <p>tokenization · finance · infrastructure</p>
+          </div>
+
+          <div class="focus-item">
+            <small>05</small>
+            <strong>Technical Writing</strong>
+            <p>complex ideas → clear language</p>
+          </div>
+
+          <div class="focus-item">
+            <small>06</small>
+            <strong>Research</strong>
+            <p>deep dives · analysis · synthesis</p>
+          </div>
+
+          <div class="focus-item">
+            <small>07</small>
+            <strong>Content Strategy</strong>
+            <p>positioning · education · distribution</p>
+          </div>
+
+          <div class="focus-item">
+            <small>08</small>
+            <strong>Experiments</strong>
+            <p>AI tools · websites · weird ideas</p>
+          </div>
+
         </div>
 
-        <div class="portfolio-tabs">
-          <button class="tab-btn active" data-tab="articles">Articles on 𝕏</button>
-          <button class="tab-btn" data-tab="storytelling">Storytelling on 𝕏</button>
-        </div>
-
-        <!-- Cards are loaded from script.js -->
-        <div class="portfolio-grid" id="portfolioGrid"></div>
       </div>
+
     </section>
 
 
-    <!-- ================= TOOLS SECTION ================= -->
-    <section class="section" id="tools">
-      <div class="container">
+
+    <!-- PROOF -->
+    <section class="section" id="proof">
+
+      <div class="section-label">
+        03 / PROOF
+      </div>
+
+
+      <div class="section-body">
+
         <div class="section-heading">
-          <p class="section-label">Tools</p>
-          <h2>Tools I use for writing, research, content, and creation.</h2>
+
+          <h2>
+            Less résumé.<br>
+            <em>More evidence.</em>
+          </h2>
+
         </div>
 
-        <div class="tools-layout">
-          <div class="tool-box">
-            <h3>Writing & Content Tools</h3>
 
-            <div class="tool-tags">
-              <span>Google Docs</span>
-              <span>Notion</span>
-              <span>Canva</span>
-              <span>Obsidian</span>
-              <span>Typefully</span>
-              <span>Twitter / X</span>
-              <span>Medium</span>
-              <span>Blog Platforms</span>
-              <span>Basic HTML / CSS</span>
-              <span>WordPress / Webflow</span>
+        <div class="stats-grid">
+
+          <div class="stat">
+            <strong>2,050</strong>
+            <span>X FOLLOWERS</span>
+          </div>
+
+          <div class="stat">
+            <strong>4.5M</strong>
+            <span>X IMPRESSIONS</span>
+          </div>
+
+          <div class="stat">
+            <strong>15</strong>
+            <span>ARTICLES PUBLISHED</span>
+          </div>
+
+          <div class="stat">
+            <strong>40</strong>
+            <span>AI CREATORS RECRUITED</span>
+          </div>
+
+          <div class="stat">
+            <strong>2+</strong>
+            <span>YEARS IN WEB3</span>
+          </div>
+
+        </div>
+
+
+        <div class="proof-note">
+          Selected numbers from my work across writing,
+          research, Web3 and creator campaigns.
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- WORK -->
+    <section class="section" id="work">
+
+      <div class="section-label">
+        04 / WORK
+      </div>
+
+
+      <div class="section-body">
+
+        <div class="section-heading">
+
+          <h2>
+            Selected<br>
+            <em>work.</em>
+          </h2>
+
+          <span>
+            WRITING / RESEARCH
+          </span>
+
+        </div>
+
+
+        <!-- AI -->
+
+        <div class="work-category">
+
+          <div class="category-title">
+            AI
+          </div>
+
+
+          <a
+            href="https://x.com/GeekyDamian/status/2091559908709650432"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work-row"
+          >
+
+            <span>01</span>
+
+            <div>
+              <h3>AI Research</h3>
+              <p>
+                Research-led AI writing and analysis.
+              </p>
             </div>
-          </div>
 
-          <div class="tool-box">
-            <h3>AI Tools</h3>
+            <span class="arrow">↗</span>
 
-            <div class="tool-tags">
-              <span>ChatGPT</span>
-              <span>Claude</span>
-              <span>Perplexity</span>
-              <span>Grok</span>
-              <span>Gemini</span>
-              <span>Google AI Studio</span>
-              <span>Higgsfield</span>
+          </a>
+
+
+          <a
+            href="https://x.com/GeekyDamian/status/2098093019429814508"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work-row"
+          >
+
+            <span>02</span>
+
+            <div>
+              <h3>AI / Technology</h3>
+              <p>
+                Exploring emerging AI systems and technology.
+              </p>
             </div>
-          </div>
+
+            <span class="arrow">↗</span>
+
+          </a>
+
+
+          <a
+            href="https://x.com/GeekyDamian/status/2092289314327560664"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work-row"
+          >
+
+            <span>03</span>
+
+            <div>
+              <h3>AI Explainer</h3>
+              <p>
+                Breaking down technical ideas into understandable language.
+              </p>
+            </div>
+
+            <span class="arrow">↗</span>
+
+          </a>
+
         </div>
+
+
+
+        <!-- WEB3 -->
+
+        <div class="work-category">
+
+          <div class="category-title">
+            WEB3
+          </div>
+
+
+          <a
+            href="https://x.com/GeekyDamian/status/2094482845808935419"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work-row"
+          >
+
+            <span>01</span>
+
+            <div>
+              <h3>Web3 Research</h3>
+              <p>
+                Protocol research and ecosystem analysis.
+              </p>
+            </div>
+
+            <span class="arrow">↗</span>
+
+          </a>
+
+
+          <a
+            href="https://x.com/GeekyDamian/status/2065839770362675657"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work-row"
+          >
+
+            <span>02</span>
+
+            <div>
+              <h3>Crypto / Infrastructure</h3>
+              <p>
+                Educational writing around Web3 systems.
+              </p>
+            </div>
+
+            <span class="arrow">↗</span>
+
+          </a>
+
+        </div>
+
+
+
+        <!-- WRITING -->
+
+        <div class="work-category">
+
+          <div class="category-title">
+            WRITING
+          </div>
+
+
+          <a
+            href="https://x.com/GeekyDamian/status/2061028919432589585"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work-row"
+          >
+
+            <span>01</span>
+
+            <div>
+              <h3>Technical Writing</h3>
+              <p>
+                Research-driven technical storytelling.
+              </p>
+            </div>
+
+            <span class="arrow">↗</span>
+
+          </a>
+
+
+          <a
+            href="https://x.com/GeekyDamian/status/2092648031627751508"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work-row"
+          >
+
+            <span>02</span>
+
+            <div>
+              <h3>Long-form Writing</h3>
+              <p>
+                Turning complex ideas into readable narratives.
+              </p>
+            </div>
+
+            <span class="arrow">↗</span>
+
+          </a>
+
+        </div>
+
       </div>
+
     </section>
 
 
-    <!-- ================= EDUCATION SECTION ================= -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="education-card">
-          <div>
-            <p class="section-label">Education</p>
-            <h2>Economics and Education Student</h2>
-            <p class="institution">University of Benin</p>
-          </div>
 
-          <div class="education-details">
-            <p><strong>Year:</strong> 2023 — 2027</p>
-            <p><strong>Relevant Coursework:</strong> Economics, Education, Communication, Instructional Technology, Psychology.</p>
-          </div>
-        </div>
+    <!-- BUILDS -->
+    <section class="section" id="builds">
+
+      <div class="section-label">
+        05 / BUILDS
       </div>
+
+
+      <div class="section-body">
+
+        <p class="large-text">
+          Things I made because I wanted to see
+          <em>if I could.</em>
+        </p>
+
+
+        <div class="build-grid">
+
+
+          <a
+            href="https://damianonyx.github.io/nex-n25-kitchen/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="build-card"
+          >
+
+            <div class="build-visual kitchen">
+
+              <div class="wire-grid"></div>
+
+              <div class="build-orb"></div>
+
+              <span>
+                EXPERIMENT / 001
+              </span>
+
+            </div>
+
+
+            <div class="build-info">
+
+              <small>01</small>
+
+              <div>
+
+                <h3>
+                  Nex-N2.5 Kitchen
+                </h3>
+
+                <p>
+                  An experimental AI-generated Three.js
+                  environment.
+                </p>
+
+              </div>
+
+              <strong>
+                ↗
+              </strong>
+
+            </div>
+
+          </a>
+
+
+
+          <a
+            href="https://realfinancedecoded.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="build-card"
+          >
+
+            <div class="build-visual finance">
+
+              <div class="finance-lines"></div>
+
+              <span>
+                RESEARCH / 002
+              </span>
+
+            </div>
+
+
+            <div class="build-info">
+
+              <small>02</small>
+
+              <div>
+
+                <h3>
+                  Real Finance Decoded
+                </h3>
+
+                <p>
+                  Independent research around RWA
+                  infrastructure and tokenization.
+                </p>
+
+              </div>
+
+              <strong>
+                ↗
+              </strong>
+
+            </div>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
     </section>
 
 
-    <!-- ================= TESTIMONIALS SECTION ================= -->
-    <section class="section" id="testimonials">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Testimonials</p>
-          <h2>Social proof and client feedback.</h2>
-        </div>
 
-        <div class="testimonial-grid">
+    <!-- CURRENTLY -->
+    <section class="section" id="currently">
 
-          <article class="testimonial-card">
-            <p>“Client testimonial.”</p>
-            <span>Future Client</span>
-          </article>
-
-          <article class="testimonial-card">
-            <p>“Client testimonial.”</p>
-            <span>Future Collaborator</span>
-          </article>
-
-          <article class="testimonial-card">
-            <p>“Client testimonial.”</p>
-            <span>Future Web3 Project</span>
-          </article>
-
-        </div>
+      <div class="section-label">
+        06 / CURRENTLY
       </div>
-    </section>
 
 
-    <!-- ================= CONTACT SECTION ================= -->
-    <section class="section contact-section" id="contact">
-      <div class="container contact-container">
+      <div class="section-body current">
+
         <div>
-          <p class="section-label">Contact</p>
-          <h2>Need a writer, researcher, strategist, or ghostwriter?</h2>
-          <p class="contact-intro">
-            Reach out for Web3 writing, technical breakdowns, research blogs, campaign content, storytelling, ghostwriting, and portfolio collaborations.
+
+          <p class="large-text">
+            Currently trying to understand
+            <em>the machine.</em>
           </p>
 
-          <a href="https://x.com/GeekyDamian" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Contact on 𝕏
-          </a>
         </div>
+
+
+        <div class="current-list">
+
+          <p>
+            <span>→</span>
+            learning how AI systems actually work
+          </p>
+
+          <p>
+            <span>→</span>
+            researching tokenized real-world assets
+          </p>
+
+          <p>
+            <span>→</span>
+            writing about emerging technology
+          </p>
+
+          <p>
+            <span>→</span>
+            experimenting with AI tools and models
+          </p>
+
+          <p>
+            <span>→</span>
+            building things with AI
+          </p>
+
+          <p>
+            <span>→</span>
+            looking for interesting problems
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+
+      <div class="section-label">
+        07 / CONNECT
+      </div>
+
+
+      <div class="section-body">
+
+        <div class="eyebrow">
+          DAMIANONYX
+        </div>
+
+
+        <h2>
+          Got something<br>
+          <em>interesting?</em>
+        </h2>
+
+
+        <p class="contact-description">
+          Writing, research, content strategy,
+          Web3 or AI-related work.
+        </p>
+
 
         <div class="contact-links">
-          <a href="https://t.me/CallmheDamian" target="_blank" rel="noopener noreferrer">
-            <span>TG</span>
-            t.me/CallmheDamian
+
+          <a
+            href="https://x.com/GeekyDamian"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            𝕏
+            <span>@GeekyDamian</span>
+            ↗
           </a>
 
-          <a href="https://x.com/GeekyDamian" target="_blank" rel="noopener noreferrer">
-            <span>Twitter / 𝕏</span>
-            @GeekyDamian
-          </a>
-
-          <a href="mailto:Abayomiekundayo9568@gmail.com">
-            <span>Gmail 1</span>
-            Abayomiekundayo9568@gmail.com
-          </a>
 
           <a href="mailto:Damianonyx83@gmail.com">
-            <span>Gmail 2</span>
-            Damianonyx83@gmail.com
+            EMAIL
+            <span>Damianonyx83@gmail.com</span>
+            ↗
           </a>
 
-          <a href="https://medium.com/@damianonyx" target="_blank" rel="noopener noreferrer">
-            <span>Medium</span>
-            medium.com/@damianonyx
+
+          <a
+            href="https://github.com/Damianonyx"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GITHUB
+            <span>Damianonyx</span>
+            ↗
           </a>
 
-          <a href="https://open.substack.com/pub/geekydamian?utm_source=share&utm_medium=android&r=3ym1m9" target="_blank" rel="noopener noreferrer">
-            <span>Substack</span>
-            GeekyDamian
+
+          <a
+            href="https://medium.com/@damianonyx"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            MEDIUM
+            <span>@damianonyx</span>
+            ↗
           </a>
 
-          <a href="https://www.linkedin.com/in/ekundayo-abayomi-9a54a93b7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">
-            <span>LinkedIn</span>
-            Abayomi Ekundayo
+
+          <a
+            href="https://substack.com/@geekydamian"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SUBSTACK
+            <span>@geekydamian</span>
+            ↗
           </a>
+
+
+          <a
+            href="https://t.me/CallmheDamian"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TELEGRAM
+            <span>@CallmheDamian</span>
+            ↗
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
   </main>
 
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer">
-    <p>© <span id="year"></span> Damianonyx. Built as a personal CV portfolio.</p>
+
+  <footer>
+
+    <span>
+      DAMIANONYX © 2026
+    </span>
+
+    <span>
+      STILL BUILDING
+    </span>
+
   </footer>
 
 
-  <!-- ================= THEME SWITCHER ================= -->
-  <div class="theme-switcher" aria-label="Theme switcher">
-    <button class="theme-btn active" id="lightModeBtn" aria-label="Switch to light mode">
-      <!-- Sun SVG icon -->
-      <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="12" cy="12" r="4"></circle>
-        <path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"></path>
-      </svg>
-    </button>
-
-    <button class="theme-btn" id="darkModeBtn" aria-label="Switch to dark mode">
-      <!-- Moon SVG icon -->
-      <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M21 13.5A8.5 8.5 0 0 1 10.5 3a7 7 0 1 0 10.5 10.5z"></path>
-      </svg>
-    </button>
-  </div>
-
-
   <script src="script.js"></script>
+
 </body>
-</html>
+                            </html>
